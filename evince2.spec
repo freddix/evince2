@@ -143,8 +143,8 @@ rm -rf $RPM_BUILD_ROOT
 %update_icon_cache hicolor
 %update_gsettings_cache
 
-%post	libs -p /sbin/ldconfig
-%postun libs -p /sbin/ldconfig
+%post	libs -p /usr/sbin/ldconfig
+%postun libs -p /usr/sbin/ldconfig
 
 %files -f evince.lang
 %defattr(644,root,root,755)
